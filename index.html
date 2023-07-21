@@ -17,9 +17,9 @@
 
     <header class="header">
 
-            <a href="#" class="logo">Nimish.</a>
+            <a href="#" class="logo">Nimish. <span class="animate" style="--i:1;"></span></a>
 
-            <div class="bx bx-menu" id="menu-icon"> </div>
+                <div class="bx bx-menu" id="menu-icon"><span class="animate" style="--i:2;"></span> </div>
 
             <nav class="navbar">
 
@@ -30,6 +30,7 @@
                 <a href="#contact">Contact</a>
 
                 <span class="active-nav"></span>
+                <span class="animate" style="--i:2;"></span>    
             </nav>
 
         </header>
@@ -37,7 +38,7 @@
 
     <!-- HOME SECTION -->
 
-    <section class="home" id="home">
+    <section class="home show-animation" id="home">
 
         <div class="home-content">
 
@@ -49,7 +50,7 @@
 
             <div class="btn-box">
 
-                <a href="#" class="btn">Resume</a>
+                <a href="Nimish Resume.pdf" class="btn">Resume</a>
                 <a href="#contact" class="btn">Let's Talk</a>
 
             </div>
@@ -74,7 +75,7 @@
 
         <div class="about-img">
 
-            <img src="PicsArt_11-05-06.26.52.jpg" alt="profile_pic">
+            <img src="myimg.jpg" alt="profile_pic">
 
             <span class="circle-spin"></span>
         </div>
@@ -190,33 +191,36 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
 
+    
         <form action="#">
+        <!-- <form action="https://formsubmit.co/nimishkhadilkar1@gmail.com" method="POST""> -->
+
             <div class="input-box">
                 <div class="input-field">
-                    <input type="text" placeholder="Full Name" required>
+                    <input type="text" name="name" placeholder="First Name" required>
                     <span class="focus"></span>
                 </div>
-
+                
                 <div class="input-field">
-                    <input type="text" placeholder="Email" required>
+                    <input type="text" name="subject" placeholder="Last Name" id="email-sub" required>
                     <span class="focus"></span>
                 </div>
             </div>
 
             <div class="input-box">
                 <div class="input-field">
-                    <input type="number" placeholder="Phone Number" required>
+                    <input type="number" name="number" placeholder="Phone Number" required>
                     <span class="focus"></span>
                 </div>
 
                 <div class="input-field">
-                    <input type="text" placeholder="Email Subject" required>
+                    <input type="email" name="email" placeholder="Email" id="email" required>
                     <span class="focus"></span>
                 </div>
             </div>
 
             <div class="textarea-field">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <textarea name="" id="" cols="30" rows="10" name="message" placeholder="Your Message" required></textarea>
                 <span class="focus"></span>
             </div>
 
@@ -235,6 +239,8 @@
     </footer>
 
 
+
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
     <script src="script.js"></script>
 </body>
 
